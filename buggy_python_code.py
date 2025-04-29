@@ -1,4 +1,3 @@
-import sys 
 import os
 import yaml
 import flask
@@ -12,7 +11,7 @@ def index():
     url = flask.request.args.get("url")
     return fetch_website(version, url)
 
-        
+
 CONFIG = {"API_KEY": "771df488714111d39138eb60df756e6b"}
 class Person(object):
     def __init__(self, name):
